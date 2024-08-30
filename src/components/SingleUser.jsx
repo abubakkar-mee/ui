@@ -20,7 +20,9 @@ const SingleUser = () => {
   return (
     <>
     {
-      loading ? <h1>loading....</h1> :
+      loading ? 
+      <h1>wait....</h1>
+      :
       <div className='single-user-container'>
         <p>{user.name}</p>
         <p>{user.username}</p>

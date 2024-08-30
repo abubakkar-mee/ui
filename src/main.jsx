@@ -5,7 +5,9 @@ import './index.css'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Users from './components/Users.jsx'
 import SingleUser from './components/SingleUser.jsx'
-
+import Form from './components/Form.jsx'
+import Error from './components/Error.jsx'
+  
 const router = createBrowserRouter([
   {
     path:"/",
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path:"/singleuser/:id",
     element: <SingleUser />
+  },
+  {
+    path:'/add',
+    element:<Form />
+  },
+  {
+    path:"/*",
+    element:<Error />
   }
 ])
 
