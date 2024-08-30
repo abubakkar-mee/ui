@@ -120,5 +120,6 @@ form input{
   background-color: hsl(0, 0%, 100%);
 }
 form input::placeholder{
-  color: hsl(172, 46%, 36%);
+  color: hsl(172, 46%, 35%);
+
 }
